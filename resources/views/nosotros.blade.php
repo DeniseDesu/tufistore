@@ -17,7 +17,7 @@
                 <img src="ruta/a/imagen/mision.jpg" class="card-img-top" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Misión</h3>
-                    <p>En Tufi Store, nuestra misión es conectar a coleccionistas apasionados con las figuritas que necesitan para completar sus álbumes. Nos esforzamos por facilitar una experiencia de compra accesible, confiable y personalizada, garantizando que cada cliente encuentre esa pieza especial que busca, sin importar cuán rara sea.</p>
+                    <p>En Tufi Store nuestra misión es conectar a coleccionistas apasionados con las figuritas que necesitan para completar sus álbumes. Nos esforzamos por facilitar una experiencia de compra accesible, confiable y personalizada, garantizando que cada cliente encuentre esa pieza especial que busca, sin importar cuán rara sea.</p>
                 </div>
             </div>
         </div>
