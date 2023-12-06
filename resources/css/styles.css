@@ -1,0 +1,132 @@
+/* Estilos generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #3b3bb4;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo {
+    font-size: 3rem;
+    padding: 15px 0;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+
+/* Sobre TUFI Store */
+
+.sobre-tufistore {
+    height: 200px;
+    padding: 10px;
+}
+
+.sobre-tufistore .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Noveedades */
+
+.novedades {
+    padding: 40px;
+}
+
+.card-img-top {
+    height: 378px;
+    width: 286px;
+}
+
+/* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+/* ABM Productos */
+
+.img-abm {
+    height: 189px;
+    width: 143px;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/*=============*/
+
+
+/*Marcar las secciones en el navbar*/
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    /*color:blue;*/
+    border-bottom: 2px solid rgba(255, 255, 255, 0.986);
+ }
+
+ /*Quitar Recuadro al posarse sobre el carrito*/
+
+#navbarDropdownCart:focus, #navbarDropdownCart:hover {
+    outline: none; /* Elimina el recuadro de foco */
+    box-shadow: none; /* Elimina la sombra del recuadro */
+ }
+
+ /* Estilos para el menú desplegable */
+.navbar-custom .dropdown-menu {
+    background-color: #4c35a0; /* Color de fondo */
+    border: none;
+}
+
+.navbar-custom .dropdown-item {
+    color: #ffffff; /* Color del texto */
+}
+
+.navbar-custom .dropdown-item:hover {
+    background-color: #7a838a; /* Color al pasar el ratón */
+    color: #ffffff;
+}
+
+ /* Navbar */
+.navbar-custom {
+    background-color: #5a42c7; /* Ejemplo de color de fondo */
+    color: #ffffff; /* Color de texto */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff; /* Color de los enlaces */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: rgb(83, 58, 172); /* Color al pasar el ratón */
+}
+
+
+
+
+
+
