@@ -83,7 +83,7 @@
                                             <tr class="fw-bolder">
 
                                                 <td colspan="4"></td>
-                                                <td class="text-end">IVA 15%</td>
+                                                <td class="text-end">IVA 21%</td>
                                                 <td class="text-end">{{Cart::tax()}}</td>
                                                 <td></td>
 
