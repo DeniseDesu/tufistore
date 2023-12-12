@@ -135,3 +135,17 @@
 @if (Auth::user()->is_admin)
 @endif
 -->
+
+
+
+<!--
+
+// Actualizar el stock de cada artículo en el carrito
+    foreach (Cart::content() as $item) {
+        $articulo = Articulo::find($item->id);
+        if ($articulo) {
+            $articulo->stock = $articulo->stock - $item->qty; // Restar la cantidad comprada del stock existente
+            $articulo->save();
+            }
+    }
+-->

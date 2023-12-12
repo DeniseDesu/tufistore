@@ -14,8 +14,7 @@ class UserController extends Controller
     
         if ($search) {
             // Realiza la búsqueda si se proporcionó un término de búsqueda
-            $users = User::where('is_visible', true)
-                        ->where(function($query) use ($search) {
+            $users = User::where(function($query) use ($search) {
                             $query->where('name', 'LIKE', "%{$search}%")
                                   ->orWhere('email', 'LIKE', "%{$search}%");
                         })
@@ -24,8 +23,7 @@ class UserController extends Controller
                         ->paginate(10); // Modificado para paginar
         } else {
             // Devuelve solo los usuarios visibles si no se realizó ninguna búsqueda
-            $users = User::where('is_visible', true)
-                        ->orderBy('is_admin', 'desc')
+            $users = User::orderBy('is_admin', 'desc')
                         ->orderBy('created_at', 'desc')
                         ->paginate(10); // Modificado para paginar
         }

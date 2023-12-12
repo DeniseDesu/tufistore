@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Articulo;
 use Cart;
 use App\Models\Payment_Orders;
+use App\Models\OrderItem;
 use Illuminate\Support\Str; // Se importó "Str" para generar un string aleatorio en la orden de compra ejecutada (Simulación)
 
 class CartController extends Controller
@@ -176,13 +177,21 @@ class CartController extends Controller
     $order->numcard = $request->tarjeta;
     $order->save();
 
-    // Actualizar el stock de cada artículo en el carrito
+    // Guardar los detalles de los artículos en la tabla order_items
     foreach (Cart::content() as $item) {
         $articulo = Articulo::find($item->id);
-        if ($articulo) {
-            $articulo->stock = $articulo->stock - $item->qty; // Restar la cantidad comprada del stock existente
-            $articulo->save();
-            }
+
+        // Crear un nuevo registro de order_item
+        OrderItem::create([
+            'order_id' => $order->id, // Aquí utilizamos el ID de la orden creada
+            'articulo_id' => $articulo->id,
+            'cantidad' => $item->qty,
+            'precio' => $item->price
+        ]);
+
+        // Restar la cantidad comprada del stock del artículo
+        $articulo->stock -= $item->qty;
+        $articulo->save();
     }
 
 

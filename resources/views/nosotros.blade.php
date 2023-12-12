@@ -4,6 +4,7 @@
 <div class="container mt-4">
 
     <div class="jumbotron text-center">
+        <img src="/img/LogoTufiStore.png" class="card-img-top mx-auto img-fluid" alt="">
         <h2>Bienvenidos a Tufi Store: El Paraíso de los Coleccionistas de Figuritas</h2>
         <p>En Tufi Store, entendemos la emoción y la dedicación que conlleva la tarea de completar un álbum de figuritas. Somos más que una tienda online; somos un punto de encuentro para coleccionistas apasionados, expertos y novatos, que buscan esa pieza especial para dar vida a sus colecciones.</p>
         <p>Nuestra amplia selección de figuritas sueltas abarca una variedad de temáticas y épocas, asegurando que cada coleccionista encuentre exactamente lo que busca. Desde las clásicas hasta las más raras, cada figurita en nuestro catálogo es una oportunidad para acercarte a completar tu álbum deseado.</p>
@@ -14,7 +15,7 @@
     <div class="row text-center">
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="ruta/a/imagen/mision.jpg" class="card-img-top" alt="">
+                <img src="/img/Mision.png" class="card-img-top mx-auto img-fluid" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Misión</h3>
                     <p>En Tufi Store, nuestra misión es conectar a coleccionistas apasionados con las figuritas que necesitan para completar sus álbumes. Nos esforzamos por facilitar una experiencia de compra accesible, confiable y personalizada, garantizando que cada cliente encuentre esa pieza especial que busca, sin importar cuán rara sea.</p>
@@ -24,7 +25,7 @@
 
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="ruta/a/imagen/vision.jpg" class="card-img-top" alt="">
+                <img src="/img/Vision.png" class="card-img-top mx-auto img-fluid" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Visión</h3>
                     <p>Nuestra visión es ser la principal referencia en el mercado de figuritas sueltas, creando una comunidad global donde coleccionistas de todas las edades puedan encontrar y celebrar su pasión. Aspiramos a transformar Tufi Store en un espacio que no solo complete colecciones, sino que también fomente recuerdos duraderos.</p>
@@ -34,7 +35,7 @@
 
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="ruta/a/imagen/valores.jpg" class="card-img-top" alt="">
+                <img src="/img/Valores.png" class="card-img-top mx-auto img-fluid" alt="">
                 <div class="card-body">
                     <h3 class="card-title">Valores</h3>
                     <ul>

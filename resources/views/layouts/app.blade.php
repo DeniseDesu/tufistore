@@ -58,7 +58,7 @@
         <nav class="navbar navbar-expand-md navbar-custom shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="/img/Logo.jpg" alt="Logo" style="height: 30px;">
+                <img src="/img/LogoTufiStore.png" alt="Logo" style="height: 30px;">
                     {{ config('app.name', 'TUFI Store') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -69,6 +69,10 @@
                     
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('/*') ? 'active' : '' }}" href="{{ url('/') }}">Inicio</a>
+                    </li>
 
                     </ul>
 

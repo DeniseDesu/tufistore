@@ -155,6 +155,7 @@ class ArticuloController extends Controller
     public function ultimosArticulos()
     {
         $ultimosArticulos = Articulo::where('is_visible', true)
+                        ->where('stock', '>', 0) // Añadir esta condición para filtrar solo artículos con stock
                         ->orderBy('created_at', 'desc')
                         ->take(3) // número de artículos que quieres mostrar
                         ->get();
