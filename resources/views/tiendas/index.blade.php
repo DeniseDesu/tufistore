@@ -42,7 +42,7 @@
                                         <p class="card-text text-success font-weight-bold">$ {{$item->precio}}</p>
                                     </div>
                                     <div class="card-footer bg-white d-flex justify-content-center">
-                                        <a href="{{ route('articulos.show', $item) }}" class="btn btn-primary me-1">Ver</a>
+                                        <!--<a href="{{ route('articulos.show', $item) }}" class="btn btn-primary me-1">Ver</a> Boton de ver una card individual del articulo -->
                                         <form action="{{ route('add') }}" method="POST" class="ms-0">
                                             @csrf
                                             <input type="hidden" name="id" value="{{ $item->id }}" />
