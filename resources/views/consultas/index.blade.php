@@ -20,7 +20,7 @@
                         <h5 class="card-title"><i class="fa fa-user"></i> {{ $consulta->nombre }}</h5>
                         <p class="card-text">{{ Str::limit($consulta->consulta, 1000) }}</p> <!-- Con esto podemos limitar la cantidad de letras que se muestran -->
                         <div class="d-flex justify-content-center">
-                            <button class="btn btn-success btn-sm me-1"><i class="fa fa-reply"></i> Responder</button>
+                            <!--<button class="btn btn-success btn-sm me-1"><i class="fa fa-reply"></i> Responder</button>-->
                             <form action="{{ route('consultas.destroy', $consulta->id) }}" method="POST" class="js-eliminar">
                                 @csrf
                                 @method('DELETE')

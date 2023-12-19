@@ -41,7 +41,7 @@
 
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="is_visible" name="is_visible" {{ $user->is_visible ? 'checked' : '' }}>
-            <label class="form-check-label" for="is_visible">Visible</label>
+            <label class="form-check-label" for="is_visible">Habilitar</label>
         </div>
 
 
